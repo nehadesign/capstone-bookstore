@@ -22,5 +22,6 @@ namespace capstone.BS
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+     
     }
 }
