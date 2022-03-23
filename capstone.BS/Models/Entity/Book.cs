@@ -14,9 +14,9 @@ namespace capstone.BS.Models.Entity
         public int PublisherId { get; set; }
         public Publisher Publisher { get; set; }
         public DateTime PublishedOn { get; set; }
-        public Inventory Inventory{ get; set; }
+        public Inventory Inventory { get; set; }
         public int CategoryId { get; set; }
-        public Category Category{ get; set; }
+        public Category Category { get; set; }
         public string ImageUrl { get; set; }
         public string ThumbnailImageUrl { get; set; }
         public bool IsDigitalAvailable { get; set; }
@@ -24,5 +24,7 @@ namespace capstone.BS.Models.Entity
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }
         public decimal Price { get; set; }
+        public bool IsFeatured { get; set; }
+
     }
 }
