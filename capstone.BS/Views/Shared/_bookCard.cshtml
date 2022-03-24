@@ -1,0 +1,15 @@
+﻿
+@model IEnumerable<Book>
+
+@foreach (var book in Model)
+{
+    <div class="card">
+        <img src="@(book.ThumbnailImageUrl != "" ? book.ThumbnailImageUrl : "https://via.placeholder.com/200x275")" class="card-img-top" alt="@book.Name">
+        <div class="card-body">
+            <p class="display-5" style="font-size:1.25rem"> $ @book.Price</p>
+            <h5 class="card-title display-5" style="font-size:1.1rem;">Another mouse in trap and another will come to die</h5>
+            <p class="display-5">-@book.Author.Name</p>
+            @*<button type="button" class="btn btn-info">Quick Look</button>*@
+        </div>
+    </div>
+}
